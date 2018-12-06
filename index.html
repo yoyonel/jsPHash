@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
+	<meta charset="UTF-8">
 
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-<script src="phash.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+	 crossorigin="anonymous"></script>
+	<script src="phash.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" href="favicon.png" />
 
-<title>PHash example page</title>
+	<title>PHash example page</title>
 </head>
+
 <body>
 
-<img id="test_image" src='test.jpeg' width=600/>
+	<!-- <img id="test_image" src='test.jpeg' width=600 /> -->
+	<img id="test_image"
+		src="pythie_quality=10.jpg" 
+		alt="" 
+		width=400
+		crossOrigin = "Anonymous"
+	>
 
-<script>
+	<script>
 
-$(document).ready(function() {
-	console.log("Example of PHash");
+		$(document).ready(function () {
+			console.log("Example of PHash");
 
-	//var imageList = $('img').each(function(){ imagePHash(this); });
-	
-	var img = document.getElementById('test_image');
-	var pHash = imagePHash(img);
+			//var imageList = $('img').each(function(){ imagePHash(this); });
 
-	console.log(img);
-	console.log(pHash);
-});
+			var img = document.getElementById('test_image');
+			var pHash = imagePHash(img);
 
-</script>
+			console.log(img);
+			console.log(pHash);
+		});
+
+	</script>
 
 
 </body>
+
 </html>
